@@ -1,0 +1,115 @@
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body, #root{
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;  
+}
+
+
+.yad-flex-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.yad-button{
+   display: inline-block;
+    line-height: 1.5;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    min-width: 96px;
+}
+
+.yad-theme-1{
+  background-color: #fafafa;
+  color: #212121;
+  border: 1px solid #f3eeee;
+
+}
+.yad-mask{
+  position: absolute;
+  inset: 0;
+  background-color: #21212139;
+  z-index: 1000;
+}
+
+
+.yad-modal-root{
+   position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.yad-modal-warp{
+  min-width: 520px;
+  min-height: 280px;
+  background-color: #fff;
+  z-index: 10000;
+  border-radius: 4px;
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+box-shadow: 0px 12px 20px 8px rgba(24, 39, 75, 0.05);
+
+}
+
+.yad-modal-header{
+  padding: 12px 24px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #f5f5f5;
+}
+
+.yad-modal-footer{
+  padding: 12px 24px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+background-color: #fafafa;
+}
+
+
+.yad-modal-body{
+  padding: 24px;
+}
+
+.yad-modal-close-button{
+  width: auto;
+min-width: auto;
+background: transparent;
+border: 0;
+}
+
+.yad-modal-save-button{
+  background-color: hsl(263, 70.9%, 39%);
+color: #fff;
+min-width: 80px;
+
+}
